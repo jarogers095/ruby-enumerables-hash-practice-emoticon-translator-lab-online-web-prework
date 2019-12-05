@@ -19,17 +19,22 @@ def get_japanese_emoticon(path, emoticon)
   decoder_hash = load_library(path)
   
   translated_emoticon = decoder_hash["get_emoticon"][emoticon]
+<<<<<<< HEAD
   
   if translated_emoticon == nil 
     return "Sorry, that emoticon was not found"
   else
     return translated_emoticon
   end
+=======
+  if translated_emoticon
+>>>>>>> 7df094af66e6d1d20521fcfcb67b3d7f7d76fb55
 end
 
 def get_english_meaning(path, emoticon)
   decoder_hash = load_library(path)
   
+<<<<<<< HEAD
   translated_emoticon = decoder_hash["get_meaning"][emoticon]
   
   if translated_emoticon == nil 
@@ -37,4 +42,7 @@ def get_english_meaning(path, emoticon)
   else
     return translated_emoticon
   end
+=======
+  return decoder_hash["get_meaning"][emoticon]
+>>>>>>> 7df094af66e6d1d20521fcfcb67b3d7f7d76fb55
 end
